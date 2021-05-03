@@ -15,3 +15,4 @@
 - Check your pip version and packages are up-to-date
 - Check the path of your pip and packages
 - You may need to run install.bat on the ESP-IDF folder
+- Sometimes, the Python 3.9 dependencies do not work. Check this [link](https://github.com/espressif/esp-idf/issues/6111) if that's an issue.
