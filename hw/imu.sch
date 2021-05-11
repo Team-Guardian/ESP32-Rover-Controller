@@ -1,0 +1,31 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 3 3
+Title "IMU | Rover Controller"
+Date "2021-05-10"
+Rev "v0.0.01"
+Comp "Team Guardian"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Component Prefix: IMU"
+$EndDescr
+$Comp
+L LSM6DSMTR:LSM6DSMTR U_IMU_1
+U 1 1 609A00F1
+P 5550 3600
+F 0 "U_IMU_1" H 5550 4367 50  0000 C CNN
+F 1 "LSM6DSMTR" H 5550 4276 50  0000 C CNN
+F 2 "PQFN50P300X250X86-14N" H 5550 3600 50  0001 L BNN
+F 3 "" H 5550 3600 50  0001 L BNN
+F 4 "Rev 7" H 5550 3600 50  0001 L BNN "PARTREV"
+F 5 "STMicroelectronics" H 5550 3600 50  0001 L BNN "MANUFACTURER"
+F 6 "0.86 mm" H 5550 3600 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 7 "IPC 7351B" H 5550 3600 50  0001 L BNN "STANDARD"
+	1    5550 3600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
