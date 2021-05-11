@@ -63,4 +63,5 @@
 - Sometimes, the Python 3.9 dependencies do not work. Check this [link](https://github.com/espressif/esp-idf/issues/6111) if that's an issue.
 
 ## KiCAD
-- If the default, shared libraries are not being seen, download the [KiCAD shared libraries](https://kicad.github.io/) into "C:\Program Files\KiCad\share\kicad\library"
+- If there are no global, shared librarues, you may need to [reset the library tables to default settings](https://forum.kicad.info/t/library-management-in-kicad-version-5/14636#:~:text=resetting%20the%20library%20tables%20to%20default%20settings).
+- If the default, shared libraries are not found, download the [KiCAD shared libraries](https://kicad.github.io/) into "C:\Program Files\KiCad\share\kicad\library"
