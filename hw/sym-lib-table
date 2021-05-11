@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ESP32-WROOM-32D)(type Legacy)(uri ${KIPRJMOD}/schematics/ESP32-WROOM-32D.lib)(options "")(descr ""))
+  (lib (name LSM6DSMTR)(type Legacy)(uri ${KIPRJMOD}/schematics/LSM6DSMTR.lib)(options "")(descr ""))
+)
