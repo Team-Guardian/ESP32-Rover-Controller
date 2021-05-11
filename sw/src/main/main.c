@@ -12,7 +12,8 @@
 #include <esp_system.h>
 #include <esp_spi_flash.h>
 
-#include "drivers/lsm6dsm.h"
+#include "tg_bluetooth.h"
+#include "tg_rtos.h"
 
 /**
  * app_setup()
@@ -20,7 +21,8 @@
  * General Setup function.
  */
 void app_setup(void) {
-    lsm6dsm_setup();
+    tg_bluetooth_setup();
+    tg_rtos_setup();
 }
 
 /**
