@@ -14,19 +14,18 @@ Comment3 ""
 Comment4 "Component Prefix: ESP"
 $EndDescr
 $Comp
-L ESP32-WROOM-32D:ESP32 U1
-U 1 1 609A1D57
-P 5650 3900
-F 0 "U1" H 5650 6121 50  0000 C CNN
-F 1 "ESP32" H 5650 6030 50  0000 C CNN
-F 2 "footprints:ESP32-WROOM-32D" H 5650 3900 50  0001 L BNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 5650 5939 50  0000 C CNN
-F 4 "IC-13338" H 5650 3900 50  0001 L BNN "PROD_ID"
-F 5 "1965-ESP32-WROOM-32U(4MB)TR-ND" H 5650 5848 50  0000 C CNN "Vendor Part Number"
-F 6 "Espressif Systems" H 5650 5757 50  0000 C CNN "Manufacturer"
-F 7 "ESP32-WROOM-32U (4MB)" H 5650 5666 50  0000 C CNN "Manufacturer Product Number"
-F 8 "Digikey Canada" H 5650 5575 50  0000 C CNN "Vendor"
-	1    5650 3900
+L RF_Module:ESP32-WROOM-32D U_ESP_1
+U 1 1 609A3F69
+P 5050 3400
+F 0 "U_ESP_1" H 5050 4981 50  0000 C CNN
+F 1 "ESP32-WROOM-32D" H 5050 4890 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 5050 1900 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 4750 3450 50  0001 C CNN
+F 4 "	‎Espressif Systems‎" H 5050 3400 50  0001 C CNN "Manufacturer"
+F 5 "ESP32-WROOM-32D (16MB)" H 5050 3400 50  0001 C CNN "Manufacturer Product Number"
+F 6 "Digikey Canada" H 5050 3400 50  0001 C CNN "Vendor"
+F 7 "1904-1025-1-ND" H 5050 3400 50  0001 C CNN "Vendor Product Number"
+	1    5050 3400
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
