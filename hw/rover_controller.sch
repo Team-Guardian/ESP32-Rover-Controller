@@ -1,4 +1,31 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LSM6DSMTR:LSM6DSMTR U?
+U 1 1 6099E069
+P 5650 3000
+F 0 "U?" H 5650 3767 50  0000 C CNN
+F 1 "LSM6DSMTR" H 5650 3676 50  0000 C CNN
+F 2 "PQFN50P300X250X86-14N" H 5650 3000 50  0001 L BNN
+F 3 "" H 5650 3000 50  0001 L BNN
+F 4 "Rev 7" H 5650 3000 50  0001 L BNN "PARTREV"
+F 5 "STMicroelectronics" H 5650 3000 50  0001 L BNN "MANUFACTURER"
+F 6 "0.86 mm" H 5650 3000 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 7 "IPC 7351B" H 5650 3000 50  0001 L BNN "STANDARD"
+	1    5650 3000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
