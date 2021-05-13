@@ -10,6 +10,9 @@
 - [Troubleshooting](#troubleshooting)
   - [ESP-IDF](#esp-idf)
   - [KiCAD](#kicad)
+- [Useful Resources & References](#useful-resources--references)
+  - [Hardware](#hardware-1)
+  - [Software](#software-1)
 
 
 # How to get started
@@ -65,3 +68,10 @@
 ## KiCAD
 - If there are no global, shared librarues, you may need to [reset the library tables to default settings](https://forum.kicad.info/t/library-management-in-kicad-version-5/14636#:~:text=resetting%20the%20library%20tables%20to%20default%20settings).
 - If the default, shared libraries are not found, download the [KiCAD shared libraries](https://kicad.github.io/) into "C:\Program Files\KiCad\share\kicad\library"
+
+# Useful Resources & References
+## Hardware
+- [Sparkfun's KiCAD beginner guide](https://learn.sparkfun.com/tutorials/beginners-guide-to-kicad)
+
+## Software
+- [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
