@@ -1,5 +1,5 @@
 # Visual Studio Code
-## Workspaces
+## Project files & Workspaces
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
