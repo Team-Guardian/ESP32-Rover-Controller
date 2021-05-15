@@ -1,0 +1,6 @@
+# Visual Studio Code
+## Workspaces
+*.code-workspace
+
+## Local History
+.history/
