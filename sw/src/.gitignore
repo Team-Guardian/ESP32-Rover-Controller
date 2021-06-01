@@ -34,7 +34,3 @@
 
 # Software Directories
 build/*
-
-# Auto-Generated Files
-sdkconfig
-
