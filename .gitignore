@@ -10,5 +10,8 @@
 ## Local History
 .history/
 
+## Debugging
+*.log
+
 ## Old Files
 *.old
