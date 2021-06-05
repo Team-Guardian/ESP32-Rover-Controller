@@ -1,5 +1,7 @@
 #include <stdio.h>
+
 #include "tg_rtos.h"
+#include "tg_task.h"
 
 /**
  * RTOS setup.

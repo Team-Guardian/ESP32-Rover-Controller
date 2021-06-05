@@ -14,6 +14,7 @@
 
 #include "tg_bluetooth.h"
 #include "tg_rtos.h"
+#include "tg_task.h"
 
 /**
  * app_setup()
@@ -23,6 +24,8 @@
 void app_setup(void) {
     tg_bluetooth_setup();
     tg_rtos_setup();
+
+    TG_TasksCreate(NULL, 0);
 }
 
 /**
