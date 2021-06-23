@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name LSM6DSMTR)(type Legacy)(uri ${KIPRJMOD}/schematics/LSM6DSMTR.lib)(options "")(descr ""))
+  (lib (name rover_controller-rescue)(type Legacy)(uri ${KIPRJMOD}/rover_controller-rescue.lib)(options "")(descr ""))
 )
