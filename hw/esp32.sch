@@ -28,4 +28,37 @@ F 7 "1904-1025-1-ND" H 5050 3400 50  0001 C CNN "Vendor Product Number"
 	1    5050 3400
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60AB04B1
+P 5050 5050
+F 0 "#PWR?" H 5050 4800 50  0001 C CNN
+F 1 "GND" H 5055 4877 50  0000 C CNN
+F 2 "" H 5050 5050 50  0001 C CNN
+F 3 "" H 5050 5050 50  0001 C CNN
+	1    5050 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4800 5050 5050
+Text HLabel 6350 3500 2    50   Input ~ 0
+IMU_SDO
+Text HLabel 6350 3400 2    50   Input ~ 0
+IMU_INT1
+Text HLabel 6350 3300 2    50   Input ~ 0
+IMU_INT2
+Text HLabel 6350 3700 2    50   Output ~ 0
+IMU_SCL
+Text HLabel 6350 3600 2    50   Input ~ 0
+IMU_SDA
+Wire Wire Line
+	5650 3300 6350 3300
+Wire Wire Line
+	5650 3400 6350 3400
+Wire Wire Line
+	5650 3500 6350 3500
+Wire Wire Line
+	5650 3600 6350 3600
+Wire Wire Line
+	5650 3700 6350 3700
 $EndSCHEMATC
