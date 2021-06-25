@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title "ESP32 | Rover Controller"
 Date "2021-05-10"
 Rev "v0.0.01"
@@ -13,52 +13,575 @@ Comment2 ""
 Comment3 ""
 Comment4 "Component Prefix: ESP"
 $EndDescr
+Text Label 3400 3750 0    50   ~ 0
+EN
+$Sheet
+S 3850 3550 2100 2250
+U 60C14410
+F0 "ESP32-WROOM32D" 50
+F1 "esp32_wroom32d.sch" 50
+F2 "EN" I L 3850 3750 50 
+F3 "GPIO36" I L 3850 3850 50 
+F4 "GPIO39" I L 3850 3950 50 
+F5 "GPIO34" I L 3850 4050 50 
+F6 "GPIO35" I L 3850 4150 50 
+F7 "XTAL_32K_N" I L 3850 4250 50 
+F8 "XTAL_32K_P" I L 3850 4350 50 
+F9 "GPIO25" I L 3850 4450 50 
+F10 "GPIO26" I L 3850 4550 50 
+F11 "GPIO27" I L 3850 4650 50 
+F12 "GPIO14" I L 3850 4750 50 
+F13 "GPIO12" I L 3850 4850 50 
+F14 "GPIO13" I L 3850 4950 50 
+F15 "GPIO9" I L 3850 5150 50 
+F16 "GPIO10" I L 3850 5250 50 
+F17 "GPIO11" I L 3850 5350 50 
+F18 "GPIO6" I L 3850 5450 50 
+F19 "GPIO7" I L 3850 5550 50 
+F20 "GPIO8" I L 3850 5650 50 
+F21 "3V3" U L 3850 3650 50 
+F22 "GND" U R 5950 3650 50 
+F23 "GPIO15" I R 5950 3750 50 
+F24 "GPIO2" I R 5950 3850 50 
+F25 "GPIO0" I R 5950 3950 50 
+F26 "GPIO4" I R 5950 4050 50 
+F27 "GPIO16" I R 5950 4150 50 
+F28 "GPIO17" I R 5950 4250 50 
+F29 "GPIO5" I R 5950 4350 50 
+F30 "GPIO18" I R 5950 4450 50 
+F31 "GPIO19" I R 5950 4550 50 
+F32 "GPIO21" I R 5950 4650 50 
+F33 "GPIO3" I R 5950 4750 50 
+F34 "GPIO1" I R 5950 4850 50 
+F35 "GPIO22" I R 5950 4950 50 
+F36 "GPIO23" I R 5950 5050 50 
+$EndSheet
 $Comp
-L RF_Module:ESP32-WROOM-32D U_ESP_1
-U 1 1 609A3F69
-P 5050 3400
-F 0 "U_ESP_1" H 5050 4981 50  0000 C CNN
-F 1 "ESP32-WROOM-32D" H 5050 4890 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 5050 1900 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 4750 3450 50  0001 C CNN
-F 4 "	‎Espressif Systems‎" H 5050 3400 50  0001 C CNN "Manufacturer"
-F 5 "ESP32-WROOM-32D (16MB)" H 5050 3400 50  0001 C CNN "Manufacturer Product Number"
-F 6 "Digikey Canada" H 5050 3400 50  0001 C CNN "Vendor"
-F 7 "1904-1025-1-ND" H 5050 3400 50  0001 C CNN "Vendor Product Number"
-	1    5050 3400
+L Connector:Conn_01x20_Female PIN_1_ESP
+U 1 1 60BE7394
+P 2100 4550
+F 0 "PIN_1_ESP" H 2128 4526 50  0000 L CNN
+F 1 "Conn_01x20_Female" H 2128 4435 50  0000 L CNN
+F 2 "" H 2100 4550 50  0001 C CNN
+F 3 "~" H 2100 4550 50  0001 C CNN
+	1    2100 4550
+	-1   0    0    -1  
+$EndComp
+Text Label 3300 1450 0    50   ~ 0
+EN
+Wire Wire Line
+	1050 1150 1050 1450
+Wire Wire Line
+	1050 1450 1250 1450
+$Comp
+L Device:R_Small R_ESP_1
+U 1 1 60C60261
+P 1050 1050
+F 0 "R_ESP_1" H 1109 1096 50  0000 L CNN
+F 1 "10k" H 1109 1005 50  0000 L CNN
+F 2 "" H 1050 1050 50  0001 C CNN
+F 3 "~" H 1050 1050 50  0001 C CNN
+	1    1050 1050
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_Small R_ESP_2
+U 1 1 60C60781
+P 1050 1850
+F 0 "R_ESP_2" H 1109 1896 50  0000 L CNN
+F 1 "1k" H 1109 1805 50  0000 L CNN
+F 2 "" H 1050 1850 50  0001 C CNN
+F 3 "~" H 1050 1850 50  0001 C CNN
+	1    1050 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 1750 1050 1550
+Wire Wire Line
+	1050 1550 1250 1550
 $Comp
 L power:GND #PWR?
-U 1 1 60AB04B1
-P 5050 5050
-F 0 "#PWR?" H 5050 4800 50  0001 C CNN
-F 1 "GND" H 5055 4877 50  0000 C CNN
-F 2 "" H 5050 5050 50  0001 C CNN
-F 3 "" H 5050 5050 50  0001 C CNN
-	1    5050 5050
+U 1 1 60C6125E
+P 1050 2100
+F 0 "#PWR?" H 1050 1850 50  0001 C CNN
+F 1 "GND" H 1055 1927 50  0000 C CNN
+F 2 "" H 1050 2100 50  0001 C CNN
+F 3 "" H 1050 2100 50  0001 C CNN
+	1    1050 2100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5050 4800 5050 5050
-Text HLabel 6350 3500 2    50   Input ~ 0
-IMU_SDO
-Text HLabel 6350 3400 2    50   Input ~ 0
-IMU_INT1
-Text HLabel 6350 3300 2    50   Input ~ 0
-IMU_INT2
-Text HLabel 6350 3700 2    50   Output ~ 0
-IMU_SCL
-Text HLabel 6350 3600 2    50   Input ~ 0
+	1050 1950 1050 2100
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60C62646
+P 1050 750
+F 0 "#PWR?" H 1050 600 50  0001 C CNN
+F 1 "+3.3V" H 1065 923 50  0000 C CNN
+F 2 "" H 1050 750 50  0001 C CNN
+F 3 "" H 1050 750 50  0001 C CNN
+	1    1050 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 950  1050 750 
+$Comp
+L Device:C C_ESP_1
+U 1 1 60C64246
+P 2800 2000
+F 0 "C_ESP_1" H 2915 2046 50  0000 L CNN
+F 1 "0.1uF" H 2915 1955 50  0000 L CNN
+F 2 "" H 2838 1850 50  0001 C CNN
+F 3 "~" H 2800 2000 50  0001 C CNN
+	1    2800 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 1450 2800 1450
+Wire Wire Line
+	2800 1850 2800 1450
+Connection ~ 2800 1450
+Wire Wire Line
+	2800 1450 3300 1450
+$Comp
+L power:GND #PWR?
+U 1 1 60C65CAA
+P 2800 2300
+F 0 "#PWR?" H 2800 2050 50  0001 C CNN
+F 1 "GND" H 2805 2127 50  0000 C CNN
+F 2 "" H 2800 2300 50  0001 C CNN
+F 3 "" H 2800 2300 50  0001 C CNN
+	1    2800 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2150 2800 2300
+NoConn ~ 2450 1550
+Wire Wire Line
+	3850 3750 3400 3750
+$Comp
+L rover_controller-rescue:PTS647SK38SMTR2LFS-PTS647SK38SMTR2LFS SW?
+U 1 1 60C56991
+P 1100 1400
+AR Path="/60C56991" Ref="SW?"  Part="1" 
+AR Path="/6099F001/60C56991" Ref="SW?"  Part="1" 
+F 0 "SW?" H 1850 1687 60  0000 C CNN
+F 1 "PTS647SK38SMTR2LFS" H 1850 1581 60  0000 C CNN
+F 2 "PTS647SK38SMTR2LFS_CNK" H 1900 1540 60  0001 C CNN
+F 3 "https://www.ckswitches.com/media/2567/pts647.pdf" H 1250 1350 60  0001 C CNN
+F 4 "PTS 647 SK38 SMTR2 LFS" H 1950 1850 50  0001 C CNN "Manufacturer Number"
+F 5 "C&K" H 1900 2150 50  0001 C CNN "Manufacturer"
+F 6 "DigiKey Canada" H 1950 2050 50  0001 C CNN "Vendor"
+F 7 "PTS647SK38SMTR2LFSCT-ND" H 1950 1950 50  0001 C CNN "Vendor Product Number"
+	1    1100 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3650 3400 3650
+Text Label 3400 3650 0    50   ~ 0
+3V3
+$Comp
+L Device:C C_ESP_1
+U 1 1 60C6A85B
+P 4450 1200
+F 0 "C_ESP_1" V 4198 1200 50  0000 C CNN
+F 1 "10uF" V 4289 1200 50  0000 C CNN
+F 2 "" H 4488 1050 50  0001 C CNN
+F 3 "~" H 4450 1200 50  0001 C CNN
+	1    4450 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C_ESP_2
+U 1 1 60C6B9C0
+P 4450 1600
+F 0 "C_ESP_2" V 4198 1600 50  0000 C CNN
+F 1 "0.1uF" V 4289 1600 50  0000 C CNN
+F 2 "" H 4488 1450 50  0001 C CNN
+F 3 "~" H 4450 1600 50  0001 C CNN
+	1    4450 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 1200 4750 1200
+Wire Wire Line
+	4750 1200 4750 1400
+Wire Wire Line
+	4750 1600 4600 1600
+$Comp
+L power:GND #PWR?
+U 1 1 60C6F03D
+P 4750 1400
+F 0 "#PWR?" H 4750 1150 50  0001 C CNN
+F 1 "GND" V 4755 1272 50  0000 R CNN
+F 2 "" H 4750 1400 50  0001 C CNN
+F 3 "" H 4750 1400 50  0001 C CNN
+	1    4750 1400
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4750 1400
+Wire Wire Line
+	4750 1400 4750 1600
+Wire Wire Line
+	4300 1200 4100 1200
+Wire Wire Line
+	4100 1200 4100 1600
+Wire Wire Line
+	4100 1600 4300 1600
+Wire Wire Line
+	4100 1050 4100 1200
+Connection ~ 4100 1200
+Wire Wire Line
+	4100 1600 4100 1800
+Connection ~ 4100 1600
+Text Label 4100 1800 0    50   ~ 0
+3V3
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60C71078
+P 4100 1050
+F 0 "#PWR?" H 4100 900 50  0001 C CNN
+F 1 "+3.3V" H 4115 1223 50  0000 C CNN
+F 2 "" H 4100 1050 50  0001 C CNN
+F 3 "" H 4100 1050 50  0001 C CNN
+	1    4100 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4550 6200 4550
+Wire Wire Line
+	5950 4450 6200 4450
+Wire Wire Line
+	5950 4350 6200 4350
+Wire Wire Line
+	5950 4650 6200 4650
+Wire Wire Line
+	5950 3850 6200 3850
+Wire Wire Line
+	5950 4250 6200 4250
+Wire Wire Line
+	5950 4150 6200 4150
+Wire Wire Line
+	5950 4050 6200 4050
+Wire Wire Line
+	5950 3950 6200 3950
+Wire Wire Line
+	5950 3750 6200 3750
+Wire Wire Line
+	5950 3650 6200 3650
+Wire Wire Line
+	5950 4750 6200 4750
+Wire Wire Line
+	5950 4850 6200 4850
+Wire Wire Line
+	5950 4950 6200 4950
+Wire Wire Line
+	5950 5050 6200 5050
+Wire Wire Line
+	3850 3850 3400 3850
+Wire Wire Line
+	3850 3950 3400 3950
+Wire Wire Line
+	3850 4050 3400 4050
+Wire Wire Line
+	3850 4150 3400 4150
+Wire Wire Line
+	3850 4250 3400 4250
+Wire Wire Line
+	3850 4350 3400 4350
+Wire Wire Line
+	3850 4550 3400 4550
+Wire Wire Line
+	3850 4650 3400 4650
+Wire Wire Line
+	3850 4750 3400 4750
+Wire Wire Line
+	3850 4850 3400 4850
+Wire Wire Line
+	3850 4950 3400 4950
+Wire Wire Line
+	3850 5150 3400 5150
+Wire Wire Line
+	3850 5250 3400 5250
+Wire Wire Line
+	3850 5350 3400 5350
+Wire Wire Line
+	3850 5450 3400 5450
+Wire Wire Line
+	3850 5550 3400 5550
+Wire Wire Line
+	3850 5650 3400 5650
+Text Label 3400 3850 0    50   ~ 0
+SENSOR_VP
+Text Label 3400 3950 0    50   ~ 0
+SENSOR_VN
+Text Label 3400 4050 0    50   ~ 0
+IO34
+Text Label 3400 4150 0    50   ~ 0
+IO35
+Text Label 3400 4250 0    50   ~ 0
+IO33
+Text Label 3400 4350 0    50   ~ 0
+IO32
+Text Label 3400 4550 0    50   ~ 0
+IO26
+Text Label 3400 4650 0    50   ~ 0
+IO27
+Text Label 3400 4750 0    50   ~ 0
+IO14
+Text Label 3400 4850 0    50   ~ 0
+IO12
+Text Label 3400 4950 0    50   ~ 0
+IO13
+Text Label 3400 5150 0    50   ~ 0
+SHD
+Text Label 3400 5250 0    50   ~ 0
+SWP
+Text Label 3400 5350 0    50   ~ 0
+SCS
+Text Label 3400 5450 0    50   ~ 0
+SCK
+Text Label 3400 5550 0    50   ~ 0
+SDO
+Text Label 3400 5650 0    50   ~ 0
+SDI
+Text Label 6200 3750 0    50   ~ 0
+IO15
+Text Label 6200 3850 0    50   ~ 0
+IO2
+Text Label 6200 3950 0    50   ~ 0
+IO0
+Text Label 6200 4050 0    50   ~ 0
+IO4
+Text Label 6200 4150 0    50   ~ 0
+IO16
+Text Label 6200 4250 0    50   ~ 0
+IO17
+Text Label 6200 4350 0    50   ~ 0
+IO5
+Text Label 6200 4450 0    50   ~ 0
+IO18
+Text Label 6200 4550 0    50   ~ 0
+IO19
+Text Label 6200 4650 0    50   ~ 0
+IO21
+Text Label 6200 4750 0    50   ~ 0
+RXD0
+Text Label 6200 4850 0    50   ~ 0
+TXD0
+Text Label 6200 4950 0    50   ~ 0
+IO22
+Text Label 6200 5050 0    50   ~ 0
+IO23
+Wire Wire Line
+	5500 1500 5800 1500
+Text Label 5500 1500 0    50   ~ 0
+IO0
+Text Label 5500 1300 0    50   ~ 0
+GND
+Text Label 6200 3650 0    50   ~ 0
+GND
+Wire Wire Line
+	5500 1300 5800 1300
+Wire Wire Line
+	2300 3650 2750 3650
+Text Label 2750 3650 2    50   ~ 0
+3V3
+Wire Wire Line
+	2300 3950 2750 3950
+Wire Wire Line
+	2300 4050 2750 4050
+Wire Wire Line
+	2300 4150 2750 4150
+Wire Wire Line
+	2300 4250 2750 4250
+Wire Wire Line
+	2300 4350 2750 4350
+Wire Wire Line
+	2300 4450 2750 4450
+Wire Wire Line
+	2300 4550 2750 4550
+Wire Wire Line
+	2300 4650 2750 4650
+Wire Wire Line
+	2300 4750 2750 4750
+Wire Wire Line
+	2300 4850 2750 4850
+Wire Wire Line
+	2300 4950 2750 4950
+Wire Wire Line
+	2300 5050 2750 5050
+Wire Wire Line
+	2300 5150 2750 5150
+Wire Wire Line
+	2300 5250 2750 5250
+Wire Wire Line
+	2300 5350 2750 5350
+Wire Wire Line
+	2300 5450 2750 5450
+Wire Wire Line
+	2300 5550 2750 5550
+Text Label 2750 3950 2    50   ~ 0
+SENSOR_VN
+Text Label 2750 4050 2    50   ~ 0
+IO34
+Text Label 2750 4150 2    50   ~ 0
+IO35
+Text Label 2750 4250 2    50   ~ 0
+IO33
+Text Label 2750 4350 2    50   ~ 0
+IO32
+Text Label 2750 4450 2    50   ~ 0
+IO25
+Text Label 2750 4550 2    50   ~ 0
+IO26
+Text Label 2750 4650 2    50   ~ 0
+IO27
+Text Label 2750 4750 2    50   ~ 0
+IO14
+Text Label 2750 4850 2    50   ~ 0
+IO12
+Text Label 2750 4950 2    50   ~ 0
+IO13
+Text Label 2750 5050 2    50   ~ 0
+SHD
+Text Label 2750 5150 2    50   ~ 0
+SWP
+Text Label 2750 5250 2    50   ~ 0
+SCS
+Text Label 2750 5350 2    50   ~ 0
+SCK
+Text Label 2750 5450 2    50   ~ 0
+SDO
+Text Label 2750 5550 2    50   ~ 0
+SDI
+Wire Wire Line
+	2300 3850 2750 3850
+Text Label 2750 3850 2    50   ~ 0
+SENSOR_VP
+Text Label 2750 3750 2    50   ~ 0
+EN
+Wire Wire Line
+	2300 3750 2750 3750
+$Comp
+L power:GND #PWR?
+U 1 1 60C7652C
+P 5900 1400
+F 0 "#PWR?" H 5900 1150 50  0001 C CNN
+F 1 "GND" V 5905 1272 50  0000 R CNN
+F 2 "" H 5900 1400 50  0001 C CNN
+F 3 "" H 5900 1400 50  0001 C CNN
+	1    5900 1400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 1300 5800 1400
+Wire Wire Line
+	5900 1400 5800 1400
+Connection ~ 5800 1400
+Wire Wire Line
+	5800 1400 5800 1500
+$Comp
+L Connector:Conn_01x14_Female PIN_2_ESP
+U 1 1 60CE5E26
+P 7600 4350
+F 0 "PIN_2_ESP" H 7628 4326 50  0000 L CNN
+F 1 "Conn_01x14_Female" H 7628 4235 50  0000 L CNN
+F 2 "" H 7600 4350 50  0001 C CNN
+F 3 "~" H 7600 4350 50  0001 C CNN
+	1    7600 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 4550 7150 4550
+Wire Wire Line
+	7400 4450 7150 4450
+Wire Wire Line
+	7400 4350 7150 4350
+Wire Wire Line
+	7400 4650 7150 4650
+Wire Wire Line
+	7400 3850 7150 3850
+Wire Wire Line
+	7400 4250 7150 4250
+Wire Wire Line
+	7400 4150 7150 4150
+Wire Wire Line
+	7400 4050 7150 4050
+Wire Wire Line
+	7400 3950 7150 3950
+Wire Wire Line
+	7400 3750 7150 3750
+Wire Wire Line
+	7400 4750 7150 4750
+Wire Wire Line
+	7400 4850 7150 4850
+Wire Wire Line
+	7400 4950 7150 4950
+Wire Wire Line
+	7400 5050 7150 5050
+Text Label 7150 3750 2    50   ~ 0
+IO15
+Text Label 7150 3850 2    50   ~ 0
+IO2
+Text Label 7150 3950 2    50   ~ 0
+IO0
+Text Label 7150 4050 2    50   ~ 0
+IO4
+Text Label 7150 4150 2    50   ~ 0
+IO16
+Text Label 7150 4250 2    50   ~ 0
+IO17
+Text Label 7150 4350 2    50   ~ 0
+IO5
+Text Label 7150 4450 2    50   ~ 0
+IO18
+Text Label 7150 4550 2    50   ~ 0
+IO19
+Text Label 7150 4650 2    50   ~ 0
+IO21
+Text Label 7150 4750 2    50   ~ 0
+RXD0
+Text Label 7150 4850 2    50   ~ 0
+TXD0
+Text Label 7150 4950 2    50   ~ 0
+IO22
+Text Label 7150 5050 2    50   ~ 0
+IO23
+Text Notes 1400 5700 0    50   ~ 0
+U2 would go here (substituted by header pins)
+Wire Wire Line
+	7150 5450 7500 5450
+Wire Wire Line
+	7500 5550 7150 5550
+Wire Wire Line
+	7500 5650 7150 5650
+Text Label 7150 5450 2    50   ~ 0
+IO21
+Text Label 7150 5550 2    50   ~ 0
+IO19
+Text Label 7150 5650 2    50   ~ 0
+IO22
+Text HLabel 7500 5550 2    50   Output ~ 0
+IMU_SD0_SA0
+Text HLabel 7500 5450 2    50   BiDi ~ 0
 IMU_SDA
+Text HLabel 7500 5650 2    50   Output ~ 0
+IMU_SCL
 Wire Wire Line
-	5650 3300 6350 3300
+	7150 5750 7500 5750
 Wire Wire Line
-	5650 3400 6350 3400
+	7150 5850 7500 5850
+Text Label 7150 5750 2    50   ~ 0
+IO26
+Text Label 3400 4450 0    50   ~ 0
+IO25
 Wire Wire Line
-	5650 3500 6350 3500
-Wire Wire Line
-	5650 3600 6350 3600
-Wire Wire Line
-	5650 3700 6350 3700
+	3850 4450 3400 4450
+Text Label 7150 5850 2    50   ~ 0
+IO25
+Text HLabel 7500 5750 2    50   Output ~ 0
+IMU_INT2
+Text HLabel 7500 5850 2    50   Output ~ 0
+IMU_INT1
 $EndSCHEMATC

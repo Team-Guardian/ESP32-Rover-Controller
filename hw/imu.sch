@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 3 3
+Sheet 4 4
 Title "IMU | Rover Controller"
 Date "2021-05-10"
 Rev "v0.0.01"
@@ -183,12 +183,8 @@ Wire Wire Line
 	2400 3500 4650 3500
 Wire Wire Line
 	2400 3400 3450 3400
-Text HLabel 2400 3400 0    50   Output ~ 0
-IMU_SDA
 Text HLabel 2400 3900 0    50   Input ~ 0
 IMU_INT1
-Text HLabel 2400 3500 0    50   Output ~ 0
-IMU_SDO_SA0
 Text HLabel 2400 3300 0    50   Input ~ 0
 IMU_SCL
 $Comp
@@ -208,4 +204,8 @@ F 7 "497-16696-2-ND" H 5550 4175 50  0000 C CNN "Vendor Product Number"
 $EndComp
 Text HLabel 2400 4000 0    50   Input ~ 0
 IMU_INT2
+Text HLabel 2400 3400 0    50   BiDi ~ 0
+IMU_SDA
+Text HLabel 2400 3500 0    50   Input ~ 0
+IMU_SDO_SA0
 $EndSCHEMATC
