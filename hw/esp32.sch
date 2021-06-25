@@ -290,8 +290,6 @@ Wire Wire Line
 Wire Wire Line
 	3850 4350 3400 4350
 Wire Wire Line
-	3850 4450 3400 4450
-Wire Wire Line
 	3850 4550 3400 4550
 Wire Wire Line
 	3850 4650 3400 4650
@@ -325,8 +323,6 @@ Text Label 3400 4250 0    50   ~ 0
 IO33
 Text Label 3400 4350 0    50   ~ 0
 IO32
-Text Label 3400 4450 0    50   ~ 0
-IO25
 Text Label 3400 4550 0    50   ~ 0
 IO26
 Text Label 3400 4650 0    50   ~ 0
@@ -572,4 +568,20 @@ Text HLabel 7500 5450 2    50   BiDi ~ 0
 IMU_SDA
 Text HLabel 7500 5650 2    50   Output ~ 0
 IMU_SCL
+Wire Wire Line
+	7150 5750 7500 5750
+Wire Wire Line
+	7150 5850 7500 5850
+Text Label 7150 5750 2    50   ~ 0
+IO26
+Text Label 3400 4450 0    50   ~ 0
+IO25
+Wire Wire Line
+	3850 4450 3400 4450
+Text Label 7150 5850 2    50   ~ 0
+IO25
+Text HLabel 7500 5750 2    50   Output ~ 0
+IMU_INT2
+Text HLabel 7500 5850 2    50   Output ~ 0
+IMU_INT1
 $EndSCHEMATC
