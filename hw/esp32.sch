@@ -59,12 +59,12 @@ $EndSheet
 $Comp
 L Connector:Conn_01x20_Female PIN_1_ESP
 U 1 1 60BE7394
-P 1600 4550
-F 0 "PIN_1_ESP" H 1628 4526 50  0000 L CNN
-F 1 "Conn_01x20_Female" H 1628 4435 50  0000 L CNN
-F 2 "" H 1600 4550 50  0001 C CNN
-F 3 "~" H 1600 4550 50  0001 C CNN
-	1    1600 4550
+P 2100 4550
+F 0 "PIN_1_ESP" H 2128 4526 50  0000 L CNN
+F 1 "Conn_01x20_Female" H 2128 4435 50  0000 L CNN
+F 2 "" H 2100 4550 50  0001 C CNN
+F 3 "~" H 2100 4550 50  0001 C CNN
+	1    2100 4550
 	-1   0    0    -1  
 $EndComp
 Text Label 3300 1450 0    50   ~ 0
@@ -160,9 +160,11 @@ NoConn ~ 2450 1550
 Wire Wire Line
 	3850 3750 3400 3750
 $Comp
-L PTS647SK38SMTR2LFS:PTS647SK38SMTR2LFS SW?
+L rover_controller-rescue:PTS647SK38SMTR2LFS-PTS647SK38SMTR2LFS SW?
 U 1 1 60C56991
 P 1100 1400
+AR Path="/60C56991" Ref="SW?"  Part="1" 
+AR Path="/6099F001/60C56991" Ref="SW?"  Part="1" 
 F 0 "SW?" H 1850 1687 60  0000 C CNN
 F 1 "PTS647SK38SMTR2LFS" H 1850 1581 60  0000 C CNN
 F 2 "PTS647SK38SMTR2LFS_CNK" H 1900 1540 60  0001 C CNN
@@ -386,156 +388,85 @@ GND
 Wire Wire Line
 	5500 1300 5800 1300
 Wire Wire Line
-	1800 3650 2250 3650
-Text Label 2250 3650 2    50   ~ 0
+	2300 3650 2750 3650
+Text Label 2750 3650 2    50   ~ 0
 3V3
 Wire Wire Line
-	1800 3950 2250 3950
+	2300 3950 2750 3950
 Wire Wire Line
-	1800 4050 2250 4050
+	2300 4050 2750 4050
 Wire Wire Line
-	1800 4150 2250 4150
+	2300 4150 2750 4150
 Wire Wire Line
-	1800 4250 2250 4250
+	2300 4250 2750 4250
 Wire Wire Line
-	1800 4350 2250 4350
+	2300 4350 2750 4350
 Wire Wire Line
-	1800 4450 2250 4450
+	2300 4450 2750 4450
 Wire Wire Line
-	1800 4550 2250 4550
+	2300 4550 2750 4550
 Wire Wire Line
-	1800 4650 2250 4650
+	2300 4650 2750 4650
 Wire Wire Line
-	1800 4750 2250 4750
+	2300 4750 2750 4750
 Wire Wire Line
-	1800 4850 2250 4850
+	2300 4850 2750 4850
 Wire Wire Line
-	1800 4950 2250 4950
+	2300 4950 2750 4950
 Wire Wire Line
-	1800 5050 2250 5050
+	2300 5050 2750 5050
 Wire Wire Line
-	1800 5150 2250 5150
+	2300 5150 2750 5150
 Wire Wire Line
-	1800 5250 2250 5250
+	2300 5250 2750 5250
 Wire Wire Line
-	1800 5350 2250 5350
+	2300 5350 2750 5350
 Wire Wire Line
-	1800 5450 2250 5450
+	2300 5450 2750 5450
 Wire Wire Line
-	1800 5550 2250 5550
-Text Label 2250 3950 2    50   ~ 0
+	2300 5550 2750 5550
+Text Label 2750 3950 2    50   ~ 0
 SENSOR_VN
-Text Label 2250 4050 2    50   ~ 0
+Text Label 2750 4050 2    50   ~ 0
 IO34
-Text Label 2250 4150 2    50   ~ 0
+Text Label 2750 4150 2    50   ~ 0
 IO35
-Text Label 2250 4250 2    50   ~ 0
+Text Label 2750 4250 2    50   ~ 0
 IO33
-Text Label 2250 4350 2    50   ~ 0
+Text Label 2750 4350 2    50   ~ 0
 IO32
-Text Label 2250 4450 2    50   ~ 0
+Text Label 2750 4450 2    50   ~ 0
 IO25
-Text Label 2250 4550 2    50   ~ 0
+Text Label 2750 4550 2    50   ~ 0
 IO26
-Text Label 2250 4650 2    50   ~ 0
+Text Label 2750 4650 2    50   ~ 0
 IO27
-Text Label 2250 4750 2    50   ~ 0
+Text Label 2750 4750 2    50   ~ 0
 IO14
-Text Label 2250 4850 2    50   ~ 0
+Text Label 2750 4850 2    50   ~ 0
 IO12
-Text Label 2250 4950 2    50   ~ 0
+Text Label 2750 4950 2    50   ~ 0
 IO13
-Text Label 2250 5050 2    50   ~ 0
+Text Label 2750 5050 2    50   ~ 0
 SHD
-Text Label 2250 5150 2    50   ~ 0
+Text Label 2750 5150 2    50   ~ 0
 SWP
-Text Label 2250 5250 2    50   ~ 0
+Text Label 2750 5250 2    50   ~ 0
 SCS
-Text Label 2250 5350 2    50   ~ 0
+Text Label 2750 5350 2    50   ~ 0
 SCK
-Text Label 2250 5450 2    50   ~ 0
+Text Label 2750 5450 2    50   ~ 0
 SDO
-Text Label 2250 5550 2    50   ~ 0
+Text Label 2750 5550 2    50   ~ 0
 SDI
 Wire Wire Line
-	1800 3850 2250 3850
-Text Label 2250 3850 2    50   ~ 0
+	2300 3850 2750 3850
+Text Label 2750 3850 2    50   ~ 0
 SENSOR_VP
-Text Label 2250 3750 2    50   ~ 0
+Text Label 2750 3750 2    50   ~ 0
 EN
 Wire Wire Line
-	1800 3750 2250 3750
-Wire Wire Line
-	7300 4550 7050 4550
-Wire Wire Line
-	7300 4450 7050 4450
-Wire Wire Line
-	7300 4350 7050 4350
-Wire Wire Line
-	7300 4650 7050 4650
-Wire Wire Line
-	7300 3850 7050 3850
-Wire Wire Line
-	7300 4250 7050 4250
-Wire Wire Line
-	7300 4150 7050 4150
-Wire Wire Line
-	7300 4050 7050 4050
-Wire Wire Line
-	7300 3950 7050 3950
-Wire Wire Line
-	7300 3750 7050 3750
-Wire Wire Line
-	7300 3650 7050 3650
-Wire Wire Line
-	7300 4750 7050 4750
-Wire Wire Line
-	7300 4850 7050 4850
-Wire Wire Line
-	7300 4950 7050 4950
-Wire Wire Line
-	7300 5050 7050 5050
-Text Label 7050 3750 2    50   ~ 0
-IO15
-Text Label 7050 3850 2    50   ~ 0
-IO2
-Text Label 7050 3950 2    50   ~ 0
-IO0
-Text Label 7050 4050 2    50   ~ 0
-IO4
-Text Label 7050 4150 2    50   ~ 0
-IO16
-Text Label 7050 4250 2    50   ~ 0
-IO17
-Text Label 7050 4350 2    50   ~ 0
-IO5
-Text Label 7050 4450 2    50   ~ 0
-IO18
-Text Label 7050 4550 2    50   ~ 0
-IO19
-Text Label 7050 4650 2    50   ~ 0
-IO21
-Text Label 7050 4750 2    50   ~ 0
-RXD0
-Text Label 7050 4850 2    50   ~ 0
-TXD0
-Text Label 7050 4950 2    50   ~ 0
-IO22
-Text Label 7050 5050 2    50   ~ 0
-IO23
-Text Label 7050 3650 2    50   ~ 0
-GND
-$Comp
-L Connector:Conn_01x15_Female PIN_2_ESP
-U 1 1 60C9A479
-P 7500 4350
-F 0 "PIN_2_ESP" H 7528 4376 50  0000 L CNN
-F 1 "Conn_01x15_Female" H 7528 4285 50  0000 L CNN
-F 2 "" H 7500 4350 50  0001 C CNN
-F 3 "~" H 7500 4350 50  0001 C CNN
-	1    7500 4350
-	1    0    0    -1  
-$EndComp
+	2300 3750 2750 3750
 $Comp
 L power:GND #PWR?
 U 1 1 60C7652C
@@ -557,76 +488,88 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x14_Female PIN_2_ESP
 U 1 1 60CE5E26
-P 9200 4350
-F 0 "PIN_2_ESP" H 9228 4326 50  0000 L CNN
-F 1 "Conn_01x14_Female" H 9228 4235 50  0000 L CNN
-F 2 "" H 9200 4350 50  0001 C CNN
-F 3 "~" H 9200 4350 50  0001 C CNN
-	1    9200 4350
+P 7600 4350
+F 0 "PIN_2_ESP" H 7628 4326 50  0000 L CNN
+F 1 "Conn_01x14_Female" H 7628 4235 50  0000 L CNN
+F 2 "" H 7600 4350 50  0001 C CNN
+F 3 "~" H 7600 4350 50  0001 C CNN
+	1    7600 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9000 4550 8750 4550
+	7400 4550 7150 4550
 Wire Wire Line
-	9000 4450 8750 4450
+	7400 4450 7150 4450
 Wire Wire Line
-	9000 4350 8750 4350
+	7400 4350 7150 4350
 Wire Wire Line
-	9000 4650 8750 4650
+	7400 4650 7150 4650
 Wire Wire Line
-	9000 3850 8750 3850
+	7400 3850 7150 3850
 Wire Wire Line
-	9000 4250 8750 4250
+	7400 4250 7150 4250
 Wire Wire Line
-	9000 4150 8750 4150
+	7400 4150 7150 4150
 Wire Wire Line
-	9000 4050 8750 4050
+	7400 4050 7150 4050
 Wire Wire Line
-	9000 3950 8750 3950
+	7400 3950 7150 3950
 Wire Wire Line
-	9000 3750 8750 3750
+	7400 3750 7150 3750
 Wire Wire Line
-	9000 4750 8750 4750
+	7400 4750 7150 4750
 Wire Wire Line
-	9000 4850 8750 4850
+	7400 4850 7150 4850
 Wire Wire Line
-	9000 4950 8750 4950
+	7400 4950 7150 4950
 Wire Wire Line
-	9000 5050 8750 5050
-Text Label 8750 3750 2    50   ~ 0
+	7400 5050 7150 5050
+Text Label 7150 3750 2    50   ~ 0
 IO15
-Text Label 8750 3850 2    50   ~ 0
+Text Label 7150 3850 2    50   ~ 0
 IO2
-Text Label 8750 3950 2    50   ~ 0
+Text Label 7150 3950 2    50   ~ 0
 IO0
-Text Label 8750 4050 2    50   ~ 0
+Text Label 7150 4050 2    50   ~ 0
 IO4
-Text Label 8750 4150 2    50   ~ 0
+Text Label 7150 4150 2    50   ~ 0
 IO16
-Text Label 8750 4250 2    50   ~ 0
+Text Label 7150 4250 2    50   ~ 0
 IO17
-Text Label 8750 4350 2    50   ~ 0
+Text Label 7150 4350 2    50   ~ 0
 IO5
-Text Label 8750 4450 2    50   ~ 0
+Text Label 7150 4450 2    50   ~ 0
 IO18
-Text Label 8750 4550 2    50   ~ 0
+Text Label 7150 4550 2    50   ~ 0
 IO19
-Text Label 8750 4650 2    50   ~ 0
+Text Label 7150 4650 2    50   ~ 0
 IO21
-Text Label 8750 4750 2    50   ~ 0
+Text Label 7150 4750 2    50   ~ 0
 RXD0
-Text Label 8750 4850 2    50   ~ 0
+Text Label 7150 4850 2    50   ~ 0
 TXD0
-Text Label 8750 4950 2    50   ~ 0
+Text Label 7150 4950 2    50   ~ 0
 IO22
-Text Label 8750 5050 2    50   ~ 0
+Text Label 7150 5050 2    50   ~ 0
 IO23
-Text Notes 9950 3050 2    50   ~ 0
-Would you like to have a pinout for ground to lead to a larger grounding device? 
-Text Notes 6750 3150 0    50   ~ 0
-Maybe attach it to the base (metal) and have a metal strip rubbing the ground. 
-Text Notes 6300 3250 0    50   ~ 0
-This would discharge and ground the device. Would also combat the static that is generated by the tires
-Text Notes 1250 5700 0    50   ~ 0
+Text Notes 1400 5700 0    50   ~ 0
 U2 would go here (substituted by header pins)
+Wire Wire Line
+	7150 5450 7500 5450
+Wire Wire Line
+	7500 5550 7150 5550
+Wire Wire Line
+	7500 5650 7150 5650
+Text Label 7150 5450 2    50   ~ 0
+IO21
+Text Label 7150 5550 2    50   ~ 0
+IO19
+Text Label 7150 5650 2    50   ~ 0
+IO22
+Text HLabel 7500 5550 2    50   Output ~ 0
+IMU_SD0_SA0
+Text HLabel 7500 5450 2    50   BiDi ~ 0
+IMU_SDA
+Text HLabel 7500 5650 2    50   Output ~ 0
+IMU_SCL
 $EndSCHEMATC
